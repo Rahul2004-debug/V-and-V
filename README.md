@@ -1,6 +1,6 @@
 Vibrant and Vintage is a mordern E-commerce website for both Men and Women .
 Its Built on vanilla css ,js and html .
-no Framework is used .
+no Framework are used .
 
 ![image](https://github.com/user-attachments/assets/83109876-c8cc-41ff-a2ba-bf922d747ff4)
 ![image](https://github.com/user-attachments/assets/d30ad9e5-8ab5-4124-9b52-2c3fa4003026)
