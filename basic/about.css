@@ -1,0 +1,941 @@
+* {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    list-style: none;
+}
+
+body {
+    background-color: #fff;
+    height: 100%;
+}
+
+/* <------------------------------------------------Header starts---------------------------------------------------> */
+
+nav.header {
+    display: flex;
+    width: 100%;
+    max-height: 2rem;
+    margin-top: 0.3rem;
+    border-radius: 5px;
+    background-color: #e7e6e6;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbox {
+    background-color: #ffff;
+    width: 23.5rem;
+    display: flex;
+    height: 2.5rem;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 5px #fff;
+    display: none;
+}
+
+input[type="text"] {
+    width: 20rem;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* <------------------------------------------------Header ends---------------------------------------------------> */
+
+/* <------------------------------------------------Navbar starts---------------------------------------------------> */
+
+
+nav.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    position: absolute;
+    width: 100%;
+    top: 2rem;
+    background-color: #596C8B;
+}
+
+.logo {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    width: 8rem;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.navbar img {
+    height: 3rem;
+}
+
+.search {
+    background-color: #ffff;
+    width: 23.5rem;
+    display: flex;
+    height: 2.5rem;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 5px #fff;
+}
+
+input[type="text"] {
+    width: 20rem;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+}
+
+.lists {
+    margin-right: 1rem;
+}
+
+.lists ul {
+    margin: 0;
+}
+
+.lists li {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.lists a {
+    margin: 0rem 0.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.lists a:nth-child(5) {
+    background-color: #ffff;
+    color: #798299;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.lists a:hover {
+    background-color: #ffff;
+    color: #798299;
+    padding: 6px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+nav .menu-btn i {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.About-Banner {
+    position: relative;
+    top: 8.3rem;
+    border-bottom: 2px solid black;
+}
+
+.About-Banner img {
+    height: 100%;
+    width: 100%;
+}
+
+section.Abt-Us {
+    position: relative;
+    top: 9rem;
+    grid-row-gap: 1rem;
+    display: flex;
+    row-gap: 2rem;
+    align-items: center;
+    background-color: #667087;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+
+.Abt-Us-Child1 {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    margin: 1rem 0rem;
+    background-color: #667087;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.Person1-disp {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 0px;
+    height: 100%;
+    justify-content: center;
+}
+
+.Person1-disp h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.Idea {
+    font-size: 1rem;
+}
+
+.Idea-1 {
+    font-size: .7rem;
+}
+
+.Person1-disp h5 {
+    margin-bottom: 15px;
+}
+
+.Person1-disp p {
+    letter-spacing: 1px;
+}
+
+.Person1-img {
+    width: 250px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.Abt-us-hrl1 {
+    width: 80%;
+    border: 1px solid #fff;
+}
+
+.Abt-Us-Child2 {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin: 1rem 0rem;
+    background-color: #667087;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.Child2-disp {
+    width: 64%;
+}
+
+.child2-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+}
+
+.member-top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.member-image {
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+}
+
+.member-image img {
+    height: 75px;
+    width: 75px;
+    border-radius: 5px;
+
+}
+
+.member-disp {
+    color: #667087;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.Abt-us-hrl2 {
+    width: 80%;
+    border: 1px solid #fff;
+}
+
+.Abt-Us-Child3 {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    margin: 1rem 0rem;
+    background-color: #667087;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.Person3-disp {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 0px;
+    height: 100%;
+    justify-content: center;
+}
+
+.Person3-disp h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.Person3-disp h3 {
+    margin-bottom: 3px;
+}
+
+.Person3-disp p {
+    letter-spacing: 1px;
+}
+
+.Person3-vrl2 {
+    height: 70%;
+    border: 1px solid #fff;
+}
+
+.Person3-img {
+    width: 250px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.features {
+    position: relative;
+    top: 10.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Fe-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.Fe-header h2 {
+    font-weight: 700;
+}
+
+.Fe-Header-hrl1 {
+    width: 80%;
+    border: 1px solid black;
+}
+
+.Fe-header span {
+    padding: 10px;
+}
+
+.Fe-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.Fe-card {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    text-align: center;
+    width: 400px;
+    background-color: #f6f6f6;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.Fe-card h2 {
+    margin: 1rem 0rem;
+}
+
+.Fe-card p {
+    width: 80%;
+}
+
+section.Contact {
+    display: flex;
+    position: relative;
+    top: 12rem;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background-color: #596C8B;
+    border-top: 2rem solid #596C8B;
+}
+
+.Co-Header h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.Co-Body {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Co-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    padding: 1rem;
+}
+
+.Map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 90%;
+}
+
+.Map iframe {
+    width: 90%;
+
+}
+
+.Link1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.Link1 h4 {
+    border-bottom: 1px solid #fff;
+}
+
+.Link1 a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+.Link2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.Link2 h4 {
+    border-bottom: 1px solid #fff;
+}
+
+.Link2 a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+.Link3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.Link3 h4 {
+    border-bottom: 1px solid #fff;
+}
+
+.Link3 a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+.Link3 span {
+    font-size: 0.8rem;
+}
+
+.Insta-Handles {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    color: #fff;
+    padding: 1rem;
+    background-color: #798299;
+}
+
+.Insta-Men {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    color: #fff;
+}
+
+.Insta-Men a {
+    margin: 0px 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.vl {
+    border-left: 2px solid #fff;
+    height: 40px;
+}
+
+.Insta-Women {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    color: #fff;
+
+}
+
+.Insta-Women a {
+    margin: 0px 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.fa-brands,
+.fab {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+
+.Co-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.Co-footer a {
+    margin: 0px 8px;
+    color: #fff;
+}
+
+
+
+
+@media (max-width:665px) {
+    .logo {
+        height: 3rem;
+    }
+
+    nav.navbar {
+        top: 2rem;
+        display: grid;
+        grid-template-columns: 8fr 2fr;
+        justify-items: stretch;
+        align-items: center;
+    }
+
+    #click:checked~.menu-btn i:before {
+        content: "\f00d";
+    }
+
+    .lists ul {
+        position: absolute;
+        top: 4.2rem;
+        left: -100%;
+        width: 100%;
+        height: 65vh;
+        background-color: #fff;
+        z-index: 200;
+    }
+
+    #click:checked~.lists ul {
+        left: 0;
+    }
+
+    .lists li {
+        display: block;
+    }
+
+    .lists a {
+        display: block;
+        padding: 1.5rem 0;
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 0.1rem 0;
+        color: #798299;
+    }
+
+    .lists a:first-child {
+        padding: 2rem 0;
+        color: #fff;
+        background-color: #798299;
+    }
+
+    .lists a:hover {
+        padding: 2rem 0;
+        color: #fff;
+        background-color: #798299;
+    }
+
+    nav .menu-btn i {
+        display: inline-block;
+        margin: 0;
+    }
+
+    label .menu-btn {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+
+
+    .About-Banner {
+        position: relative;
+        top: 6.3rem;
+    }
+
+    section.Abt-Us {
+        top: 7rem;
+    }
+
+    .Abt-Us-Child1 {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .Person1-disp {
+        width: 90%;
+        align-items: center;
+
+    }
+
+    .Person1-disp p {
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .Abt-Us-Child2 {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .Child2-disp {
+        width: 90%;
+        text-align: center;
+    }
+
+    .Child2-disp p {
+        text-align: center;
+    }
+
+    .Abt-Us-Child3 {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .Person3-disp {
+        width: 90%;
+        align-items: center;
+    }
+
+    .Person3-disp p {
+        text-align: center;
+    }
+}
+
+@media (max-width:584px) {
+    .Co-Body {
+        width: 100%;
+    }
+}
+
+@media (max-width:550px) {
+    .Co-Body {
+        width: 100%;
+    }
+
+    .Map iframe {
+        width: 100%;
+    }
+
+    .Co-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        /* padding: 0.5rem; */
+        flex-wrap: wrap;
+        margin: 15px 0px;
+    }
+
+    .Link1 {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .Link1 h4 {
+        font-size: 1.2rem;
+        border-bottom: 1px solid #fff;
+    }
+
+    .Link1 a {
+        padding: 0px;
+    }
+
+    .Link2 {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .Link2 h4 {
+        font-size: 1.2rem;
+        border-bottom: 1px solid #fff;
+    }
+
+    .Link2 a {
+        padding: 0px;
+    }
+
+    .Link3 {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .Link3 h4 {
+        font-size: 1.2rem;
+        border-bottom: 1px solid #fff;
+    }
+
+    .Link3 a {
+        padding: 0px;
+    }
+}
+
+@media (max-width:445px) {
+    .member {
+        padding: 0rem;
+        margin: 1rem 0rem;
+    }
+
+    .member-image {
+        height: 70px;
+        align-items: center;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .member-image img {
+        height: 65px;
+        width: 65px;
+    }
+
+    .member-disp {
+        margin-left: 0.5rem;
+    }
+
+    .member-disp h5 {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    .member-disp p {
+        font-size: 0.8rem;
+        margin: 0;
+    }
+}
+
+@media (max-width:425px) {
+    .Person1-disp h1 {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+
+    .Person1-disp h3 {
+        margin-bottom: 3px;
+        font-size: 1.3rem;
+    }
+
+    .Person3-disp h1 {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+
+    .Person3-disp h3 {
+        margin-bottom: 3px;
+        font-size: 1.3rem;
+    }
+
+    .Fe-header h2 {
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    .Fe-header span {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    .Fe-card {
+        height: auto;
+        width: auto;
+    }
+
+    .Fe-card h2 {
+        margin: 0.8rem 0rem;
+        font-size: 1.7rem;
+    }
+
+    .Fe-card p {
+        width: 80%;
+        font-size: 0.8rem;
+    }
+
+    .Co-links {
+        width: 100%;
+    }
+
+    .Insta-Handles {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        color: #fff;
+        padding: 0.5rem;
+        background-color: #798299;
+    }
+
+    .Insta-Men {
+        padding: 10px;
+    }
+
+    .vl {
+        border-bottom: 2px solid #fff;
+        width: 300px;
+        height: 0;
+    }
+
+    .Insta-Women {
+        padding: 10px;
+    }
+}
+
+@media (max-width:320px) {
+    .Ex-head {
+        margin-bottom: 1rem;
+    }
+
+    .banners {
+        height: 25rem;
+    }
+
+    .Link1 a {
+        font-size: 0.8rem;
+    }
+
+    .Link2 a {
+        font-size: 0.8rem;
+    }
+
+    .Link3 a {
+        font-size: 0.8rem;
+    }
+
+    .Insta-Men {
+        padding: 7px;
+    }
+
+    .Insta-Women {
+        padding: 7px;
+    }
+
+    .Insta-Men a {
+        font-size: 1rem;
+    }
+
+    .Insta-Women a {
+        font-size: 1rem;
+    }
+
+    .fa-brands,
+    .fab {
+        font-size: 1.5rem;
+    }
+
+    .vl {
+        border-bottom: 1px solid #fff;
+        width: 220px;
+        height: 0;
+    }
+}

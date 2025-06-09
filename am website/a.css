@@ -1,0 +1,32 @@
+.logo
+{
+    width: 120px;
+}
+.nav
+{
+  
+
+    display:  grid;
+    /* grid-template-columns: 0.8fr 1fr 2fr 0.2fr; */
+    align-items: center;
+    justify-content:space-between;
+    padding: 20px 10px;
+    background:#E3E6FE ;
+    box-shadow: O 5px 15px rgba(0, 0, 0, 0.6);
+
+}
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E3E6FE;
+    margin-top: 1em;
+    height: 2rem;
+    
+}
+
+.text h3:hover
+{
+    color: rgb(157, 23, 202);
+}
+

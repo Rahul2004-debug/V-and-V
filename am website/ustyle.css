@@ -1,0 +1,61 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+
+.logo img
+{
+    width: 120px; 
+    height: 74px;
+    border-radius: 17px;
+}
+
+
+#uheader
+{
+    background:#E3E6FE ;
+    box-shadow: O 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+
+.basket h1{
+    color: blueviolet;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.basket li
+{
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+}
+.baskets li img
+{
+    margin:  25px 25px;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 8%;
+    text-align: center;
+    
+}
+.products 
+    {
+        display: flex;
+        gap: 10px;
+        align-content: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+.product{
+
+    position: relative;
+    background-color: 
+}
